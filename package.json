@@ -1,0 +1,25 @@
+{
+  "name": "sanpo-plugin-spt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SingulaNet/sanpo-plugin-spt.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SingulaNet/sanpo-plugin-spt/issues"
+  },
+  "homepage": "https://github.com/SingulaNet/sanpo-plugin-spt#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "ethereumjs-tx": "^2.1.2",
+    "eventemitter2": "^6.4.6",
+    "web3": "^1.7.4"
+  }
+}
