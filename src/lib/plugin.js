@@ -167,13 +167,13 @@ class PluginSpt extends EventEmitter2 {
     return this._sendSignedTransaction(this.contract, this.address, this.privateKey, txData);
   }
 
-  transferFrom(from, to, amount) {
+  transferFrom(from, to, amount, address = this.address, privateKey = this.privateKey) {
     const txData = this.contract.methods.transferFrom(
       from,
       to,
       this.web3.utils.toWei(amount),
     ).encodeABI();
-    return this._sendSignedTransaction(this.contract, this.address, this.privateKey, txData);
+    return this._sendSignedTransaction(this.contract, address, privateKey, txData);
   }
 
   proposeVoting(votingName, proposalRate, startDate) {
